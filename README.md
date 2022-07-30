@@ -1,6 +1,6 @@
 # SurveyForm
 ## Build a Survey Form
-### freeCodeCamp Project for Responsive Web Design learning path. 
+### freeCodeCamp Project for Responsive Web Design learning path. Check it out [here](https://jjoslin07.github.io/SurveyForm/)
 
 User Stories:
 
@@ -21,4 +21,3 @@ User Stories:
 15. Inside the form element, you are presented with a <code>textarea</code> for additional comments
 16. Inside the form element, you are presented with a button with <code>id</code> of <code>submit</code> to submit all the inputs
 
-![image](https://user-images.githubusercontent.com/73438491/182002060-4a73ce3e-fbdc-4711-bbf8-a7876fb8ec35.png)
