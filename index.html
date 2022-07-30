@@ -1,0 +1,112 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <main>
+        <form action="result.html" id="survey-form">
+            <fieldset>
+                <h1 id="title">Survey Form</h1>
+                <p id="description">
+                    Thank you for taking the time to complete the survey
+                </p>
+            </fieldset>
+            <fieldset>
+
+                <label for="name" id="name-label">Full Name <input type="text" name="name" id="name"
+                        placeholder="ex. James Smith" required /></label>
+                <label for="email" id="email-label">Email <input type="email" name="email" id="email"
+                        placeholder="ex. email@example.com" required></label>
+                <label for="number" id="number-label">Age <input type="number" name="age" id="number" min="13" max="120"
+                        placeholder="ex. 37" required></label>
+            </fieldset>
+            <fieldset>
+                <label for="dropdown" id="dropdown-label">
+                    Which option best describes your situation?
+                    <select name="dropdown" id="dropdown" required>
+                        <option value="">(select one)</option>
+                        <option value="1">Employed Full-Time</option>
+                        <option value="2">Employed Part-Time</option>
+                        <option value="3">Self-Employed</option>
+                        <option value="4">Full-Time Student</option>
+                        <option value="5">Part-Time Student</option>
+                        <option value="6">Unemployed</option>
+                    </select>
+                </label>
+                <label for="radio-buttons" id="radio-button-label">
+                    Would you recommend us to your friends and family?
+                    <label for="yes">
+                        <input class="inline" type="radio" name="recommend" id="yes" value="yes"> Yes
+                    </label>
+                    <label for="no">
+
+                        <input class="inline" type="radio" name="recommend" id="no" value="no"> No
+                    </label>
+                    <label for="maybe"><input class="inline" type="radio" name="recommend" id="maybe" value="maybe">
+                        Maybe
+                    </label>
+                </label>
+            </fieldset>
+            <fieldset class="checkbox-container">
+                <label for="checkboxes" id="checkbox-label">
+                    What would you like to learn. <span>(Check all that apply)</span>
+                    <label for="html"><input class="inline" type="checkbox" name="checkbox" id="html" value="html">
+                        HTML5
+                    </label>
+                    <label for="css"><input class="inline" type="checkbox" name="checkbox" id="css" value="css">CSS3
+                    </label>
+                    <label for="javascript"><input class="inline" type="checkbox" name="checkbox" id="javascript"
+                            value="javascript">JavaScript
+                    </label>
+                    <label for="python">
+
+                        <input type="checkbox" class="inline" name="checkbox" id="python" value="python">Python
+                    </label>
+                    <label for="java">
+
+                        <input type="checkbox" class="inline" name="checkbox" id="java" value="java">Java
+                    </label>
+                    <label for="c#">
+
+                        <input type="checkbox" class="inline" name="checkbox" id="c#" value="c#">C#
+                    </label>
+                    <label for="bootstrap">
+
+                        <input type="checkbox" class="inline" name="checkbox" id="bootstrap" value="bootstrap">Bootstrap
+                    </label>
+                    <label for="sass">
+
+                        <input class="inline" type="checkbox" name="checkbox" id="sass" value="sass">Sass
+                    </label>
+                    <label for="reactjs">
+
+                        <input type="checkbox" class="inline" name="checkbox" id="reactjs" value="reactjs">ReactJs
+                    </label>
+                    <label for="angular">
+
+                        <input type="checkbox" class="inline" name="checkbox" id="angular" value="angular">Angular
+                    </label>
+
+                    <label for="vuejs">
+                        <input type="checkbox" class="inline" name="checkbox" id="vuejs" value="vuejs">VueJs
+                    </label>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="comment" id="comment-label"> Any additional comments?
+                    <textarea name="comment" id="comment" cols="30" rows="10"
+                        placeholder="Enter your comments here..."></textarea>
+                </label>
+            </fieldset>
+            <button id="submit">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>
